@@ -1,4 +1,4 @@
-export SECRET_PATH=mystore/env1
+export SECRET_PATH=${SECRET_PATH:-"mystore/env1"}
 
 oc apply -f - << _EOF_
 apiVersion: v1
